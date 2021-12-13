@@ -1,0 +1,31 @@
+12/13/2021 12:03:26 +01:00 [] - Message: Application Starting now
+12/13/2021 12:04:21 +01:00 [] - Message: Application Starting now
+12/13/2021 12:07:46 +01:00 [] - Message: Application Starting now
+12/13/2021 12:15:55 +01:00 [] - Message: Application Starting now
+12/13/2021 12:18:17 +01:00 [] - Message: Application Starting now
+12/13/2021 12:18:19 +01:00 [] - Message: Info in GetAllPublishers()
+12/13/2021 12:30:37 +01:00 [Information] - Message: Application Starting now
+12/13/2021 12:30:38 +01:00 [Information] - Message: Info in GetAllPublishers()
+12/13/2021 12:41:22 +01:00 [Information] - Message: Application Starting now
+12/13/2021 12:41:25 +01:00 [Information] - Message: Info in GetAllPublishers()
+12/13/2021 13:08:42 +01:00 [Information] - Message: Application Starting now
+12/13/2021 13:08:55 +01:00 [Error] - Message: An unhandled exception has occurred while executing the request.
+System.Exception: Exception to sql database from getallpublisher()
+   at My_Book.Controllers.PublisherController.GetAllPublishers(String sortBy, String searchStr, Int32 pageNumber) in C:\Users\DELL\source\repos\My-Book\My-Book\Controllers\PublisherController.cs:line 30
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+12/13/2021 13:08:55 +01:00 [Error] - Message: {"StatusCode":500,"Message":"Exception to sql database from getallpublisher()","Path":"/api/publisher/get-all-publishers"}
+12/13/2021 21:11:46 +01:00 [Information] - Message: Application Starting now
+12/13/2021 21:11:48 +01:00 [Information] - Message: Info in GetAllPublishers()
